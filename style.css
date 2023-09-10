@@ -39,11 +39,52 @@ body {
 .text-box {
   padding: 6rem 12rem;
 }
-h-1 {
+.h-1 {
+  display: block;
+  color: var(--color-Desaturated-Red);
+  font-weight: 300;
+  letter-spacing: 1.6rem;
+  text-transform: uppercase;
+}
+.h-2 {
+  color: var(--color-Dark-Grayish-Red);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
   display: block;
 }
-h-2 {
+.h-3 {
+  letter-spacing: 1rem;
+  color: var(--color-Dark-Grayish-Red);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .heading-primary {
-  font-size: 4.8rem;
+  font-size: 5.4rem;
+  line-height: -1rem;
+}
+.dis {
+  width: 70%;
+  font-size: 1.6rem;
+  color: var(--color-Desaturated-Red);
+}
+.input-email {
+  width: 60%;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--color-Desaturated-Red);
+  color: var(--color-Desaturated-Red);
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+.btn-submit {
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  border: none;
+  background: linear-gradient(135deg, var(--linear-3), var(--linear-4));
+  transform: translateX(-4rem);
+  cursor: pointer;
 }
