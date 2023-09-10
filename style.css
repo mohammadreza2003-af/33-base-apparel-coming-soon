@@ -15,6 +15,9 @@
 html {
   font-size: 62.5%;
 }
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
 .container {
   display: grid;
   grid-template-columns: 2fr 1.1fr;
