@@ -13,7 +13,10 @@ btnSubmit.addEventListener("click", function () {
   console.log(full);
   const emailPattern = /^[a-zA-Z0-9._-]/;
   console.log(emailPattern.test(full[0]), full[1] === "@gmail.com");
-  if (emailPattern.test(full[0]) && full[1] === "@gmail.com") {
+  if (
+    (emailPattern.test(full[0]) && full[1] === "@gmail.com") ||
+    full[1] === "@email.com"
+  ) {
     lable.classList.remove("ac-error");
     input.value = "";
   } else {
