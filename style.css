@@ -97,6 +97,7 @@ body {
   border-radius: 2rem;
   padding: 1rem 3rem;
   border: none;
+  content: "s";
   background: linear-gradient(135deg, var(--linear-3), var(--linear-4));
   transform: translateX(-4.8rem);
   cursor: pointer;
@@ -117,4 +118,14 @@ body {
 .ac-error {
   display: block;
   transform: translate(2rem, 0.5rem);
+}
+
+.error {
+  position: absolute;
+  transform: translateX(30rem);
+  display: none;
+}
+
+.ac-error-i {
+  display: block;
 }

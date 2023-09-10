@@ -3,6 +3,7 @@
 const input = document.querySelector(".input-email");
 const btnSubmit = document.querySelector(".btn-submit");
 const lable = document.querySelector(".lable-e");
+const error = document.querySelector(".error");
 
 btnSubmit.addEventListener("click", function () {
   const value = input.value.toLowerCase();
@@ -18,8 +19,10 @@ btnSubmit.addEventListener("click", function () {
     full[1] === "@email.com"
   ) {
     lable.classList.remove("ac-error");
-    input.value = "";
+    error.classList.remove("ac-error-i");
+    input.value = null;
   } else {
     lable.classList.add("ac-error");
+    error.classList.add("ac-error-i");
   }
 });
